@@ -7,6 +7,24 @@ import java.util.Arrays;
 
 public class ArrayMethods3 
 {
+	public static void quickSort(int [] list1, int front, int back)
+	{
+		//base case
+		//front >= back, but you don't do anything to it 
+		
+		if (back > front)
+		{
+			int pivotPos = partition(list1, front, back);
+			
+			//left side
+			quickSort(list1, front, pivotPos - 1);
+			
+			//right side
+			quickSort(list1, pivotPos + 1, back);
+		}
+	}
+	
+	
 	public static String[] mergeSort(String[] list)
 	{
 		//returns the sorted string array
@@ -40,5 +58,7 @@ public class ArrayMethods3
 		//need merge method ^^^^
 		
 	}
+	
+	
 	
 }
