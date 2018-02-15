@@ -53,12 +53,19 @@ public class ArrayMethods3
 			{
 				System.out.print(i + " ");
 			}
+			
 		
 		return(merge(mergeSort(left), mergeSort(right)));
 		//need merge method ^^^^
 		
 	}
 	
+	public static int partition (int[] list, int front, int back)
+	{
+		//return pivot pos
+		
+		
+	}
 	
 	
 }
